@@ -1,0 +1,114 @@
+/*
+    NAME       : Harsha Vardhan Gannamuneni
+    STUDENT NO : C0931034
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/*Style rules for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#companybanner {
+    height: 120px;
+    width: 100%;
+    border-radius: 8px;
+    margin: auto;
+    padding: 0.5px 0;
+}
+
+/* Style rules for navigation area */
+
+#imglogo {
+    float: left;
+    width: 15%;
+}
+
+nav {
+    float: right;
+    width: 80%;
+    display: flex;
+    margin: 5em 3em 0 0;
+    padding: 0 1em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: solid;
+    color: rgb(9, 9, 9);
+}
+
+nav li a:hover {
+    background-color: #90d1e7;
+    color: #1e3d58;
+    border-radius: 8px;
+}
+
+main {
+    display: block;
+    clear: left;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #90d1e7;
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #020d1d;
+}
+
+#welcome {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 0;
+    color: #1e3d58;
+}
+
+/* Styling footer part */
+footer {
+    margin: 10px 0;
+}
+
+footer div {
+    font-size: 0.75em;
+    padding: 0 1em;
+    text-align: center;
+    color: #051d40;
+}
+
+footer div a {
+    color: #051d40;
+    text-decoration: none;
+}
