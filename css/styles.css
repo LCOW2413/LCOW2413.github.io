@@ -142,6 +142,31 @@ main h2 {
     text-align: center;
 }
 
+#aboutus {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    color: #172f45;
+}
+
+p {
+    text-align: justify;
+}
+
+#box {
+    clear: left;
+    background-color: #b6e6f5;
+    margin-bottom: 2.5%;
+    padding: 1% 2%;
+    border-top: 2px solid #172f45;
+    border-bottom: 2px solid #172f45;
+    border-radius: 8px;
+}
+
+#box h3 {
+    text-align: center;
+}
+
 /* Styling footer part */
 footer {
     margin: 10px 0;
