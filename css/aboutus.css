@@ -27,6 +27,15 @@ img {
     display: block;
 }
 
+.about {
+    display: none;
+}
+
+.about-mobile {
+    display: block;
+}
+
+/* Default for mobile viewport */
 #companybanner {
     height: 120px;
     width: 100%;
@@ -67,7 +76,6 @@ nav li:first-child {
     border-top: none;
 }
 
-
 main {
     display: block;
     clear: both;
@@ -91,40 +99,47 @@ main h2 {
 
 /* Specials styling */
 #weekproddesc {
-    width: 100%;
+    float: right;
+    width: 70%;
     text-align: left;
     padding: 2px 2px;
     margin: 10px 3px;
 }
 
 .costwayDehumidifier {
-    width: 300px;
-    height: 300px;
+    float: left;
+    width: 20%;
     border: 5px solid #170064;
     border-color: #051d40;
     border-width: 2px;
     border-radius: 10px;
-    margin: auto;
+    margin: 25px 0 0 40px;
 }
 
 #productweek {
     text-align: center;
-    font-size: 30px;
+    font-size: 70px;
     margin-top: 0;
     color: #1e3d58;
 }
 
+.chooseus {
+    float: left;
+    width: 70%;
+}
+
 .costwayDehumidifier1 {
-    width: 300px;
-    height: 300px;
+    float: right;
+    width: 20%;
     border: 5px solid #170064;
     border-color: #051d40;
     border-width: 2px;
     border-radius: 10px;
-    margin: auto;
+    margin: 10px 35px 0 0;
 }
 
 #specialcontent {
+    clear: both;
     text-align: center;
 }
 
@@ -139,8 +154,10 @@ p {
     text-align: justify;
 }
 
-#box {
-    clear: left;
+#box1,
+#box2,
+#box3,
+#box4 {
     background-color: #b6e6f5;
     margin-bottom: 2.5%;
     padding: 1% 2%;
@@ -149,7 +166,10 @@ p {
     border-radius: 8px;
 }
 
-#box h3 {
+#box1 h3,
+#box2 h3,
+#box3 h3,
+#box4 h3 {
     text-align: center;
 }
 
@@ -195,7 +215,7 @@ footer div a {
     }
 }
 
-/* Media query  for tablet(some) and desktop viewport */
+/* Media query for tablet(some) and  desktop viewport */
 
 @media screen and (min-width:770px) {
     .about {
@@ -299,7 +319,7 @@ footer div a {
         border-color: #051d40;
         border-width: 2px;
         border-radius: 10px;
-        margin: 100px 0 0 40px;
+        margin: 25px 0 0 40px;
     }
 
     #productweek {
@@ -321,7 +341,7 @@ footer div a {
         border-color: #051d40;
         border-width: 2px;
         border-radius: 10px;
-        margin: 100px 35px 0 0;
+        margin: 10px 35px 0 0;
     }
 
     #specialcontent {
