@@ -284,12 +284,11 @@ footer div a {
     }
 
     /* Specials styling */
-    #weekproddesc {
-        float: right;
-        width: 70%;
-        text-align: left;
-        padding: 2px 2px;
-        margin: 10px 3px;
+    #productweek {
+        text-align: center;
+        font-size: 70px;
+        margin-top: 0;
+        color: #1e3d58;
     }
 
     .costwayDehumidifier {
@@ -299,19 +298,24 @@ footer div a {
         border-color: #051d40;
         border-width: 2px;
         border-radius: 10px;
-        margin: 100px 0 0 40px;
+        margin: 50px 0 0 40px;
     }
 
-    #productweek {
-        text-align: center;
-        font-size: 70px;
-        margin-top: 0;
-        color: #1e3d58;
+    #weekproddesc {
+        float: right;
+        width: 70%;
+        text-align: left;
+        padding: 2px 2px;
+        margin: 30px 3px;
     }
 
     .chooseus {
+        clear: both;
         float: left;
         width: 70%;
+        text-align: left;
+        padding: 2px 2px;
+        margin: 40px 3px;
     }
 
     .costwayDehumidifier1 {
@@ -321,12 +325,14 @@ footer div a {
         border-color: #051d40;
         border-width: 2px;
         border-radius: 10px;
-        margin: 100px 35px 0 0;
+        margin: 50px 35px 0 0;
     }
 
     #specialcontent {
         clear: both;
         text-align: center;
+        padding: 2px 2px;
+        margin: 10px 3px;
     }
 
     #aboutus {
