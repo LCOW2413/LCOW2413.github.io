@@ -67,6 +67,13 @@ nav li:first-child {
     border-top: none;
 }
 
+.tablet-desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
 
 main {
     display: block;
@@ -82,79 +89,57 @@ main h2 {
     color: #020d1d;
 }
 
-#welcome {
-    text-align: center;
-    font-size: xx-large;
-    margin-top: 0;
-    color: #1e3d58;
+main h3 {
+    color: #193a6a;
 }
 
-/* Specials styling */
-#weekproddesc {
-    width: 100%;
-    text-align: left;
-    padding: 2px 2px;
-    margin: 10px 3px;
-}
-
-.costwayDehumidifier {
-    width: 300px;
-    height: 300px;
-    border: 5px solid #170064;
-    border-color: #051d40;
-    border-width: 2px;
-    border-radius: 10px;
-    margin: auto;
-}
-
-#productweek {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 0;
-    color: #1e3d58;
-}
-
-.costwayDehumidifier1 {
-    width: 300px;
-    height: 300px;
-    border: 5px solid #170064;
-    border-color: #051d40;
-    border-width: 2px;
-    border-radius: 10px;
-    margin: auto;
-}
-
-#specialcontent {
+main h3,
+main p {
     text-align: center;
 }
 
-#specialcontent p {
-    text-align: center;
+aside {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 2%;
+    background-color: #bfe7f4;
+    box-shadow: 5px 5px 8px #fbf9f9;
+    border-radius: 5%;
 }
 
-#aboutus {
-    text-align: center;
-    font-size: 50px;
-    margin-top: 0;
-    color: #172f45;
+.grid-item1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: #f0f4f6;
+    border-radius: 5%;
+    margin: 20px;
 }
 
-p {
-    text-align: justify;
-}
-
-#box {
-    clear: left;
-    background-color: #b6e6f5;
-    margin-bottom: 2.5%;
-    padding: 1% 2%;
-    border-top: 2px solid #172f45;
-    border-bottom: 2px solid #172f45;
+figure {
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 3px solid #52cfee;
     border-radius: 8px;
 }
 
-#box h3 {
+figure img {
+    border-radius: 8px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(78, 77, 155, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 5% 0;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 /* Styling footer part */
@@ -178,6 +163,23 @@ footer div a {
 
 @media screen and (min-width:630px) {
 
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    main h3,
+    main p {
+        text-align: center;
+    }
+
     nav {
         align-self: center;
     }
@@ -197,16 +199,57 @@ footer div a {
     nav li a {
         padding: 0.1em 0.75em;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #bfe7f4;
+        box-shadow: 5px 5px 8px #fbf9f9;
+        border-radius: 8%;
+    }
+
+    aside h3 {
+        text-shadow: 5px 5px 5px #dfd8d8;
+    }
+
+    .grid-item0 {
+        grid-column: 1 / span 2;
+    }
+
+    .grid-item1 {
+        grid-column: 1 / span 2;
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #f0f4f6;
+        border-radius: 5%;
+        margin: 20px;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
 }
 
 /* Media query  for tablet(some) and desktop viewport */
 
-@media screen and (min-width:770px) {
+@media screen and (min-width:769px) {
     .about {
         display: block;
     }
 
-    .about-mobile {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
         display: none;
     }
 
@@ -275,135 +318,66 @@ footer div a {
         border-radius: 8px;
     }
 
-
     main h2 {
         color: #020d1d;
     }
 
-    #welcome {
-        text-align: center;
-        font-size: xx-large;
-        margin-top: 0;
-        color: #1e3d58;
-    }
-
-    /* Specials styling */
-    #productweek {
-        text-align: center;
-        font-size: 70px;
-        margin-top: 0;
-        color: #1e3d58;
-    }
-
-    .costwayDehumidifier {
-        float: left;
-        width: 20%;
-        border: 5px solid #170064;
-        border-color: #051d40;
-        border-width: 2px;
-        border-radius: 10px;
-        margin: 50px 0 0 40px;
-    }
-
-    #weekproddesc {
-        float: right;
-        width: 70%;
-        text-align: left;
-        padding: 2px 2px;
-        margin: 30px 3px;
-    }
-
-    .chooseus {
-        clear: both;
-        float: left;
-        width: 70%;
-        text-align: left;
-        padding: 2px 2px;
-        margin: 40px 3px;
-    }
-
-    .costwayDehumidifier1 {
-        float: right;
-        width: 20%;
-        border: 5px solid #170064;
-        border-color: #051d40;
-        border-width: 2px;
-        border-radius: 10px;
-        margin: 50px 35px 0 0;
-    }
-
-    #specialcontent {
-        clear: both;
-        text-align: center;
-        padding: 2px 2px;
-        margin: 10px 3px;
-    }
-
-    #specialcontent p {
+    main h3,
+    main p {
         text-align: center;
     }
 
-    #aboutus {
-        text-align: center;
-        font-size: 50px;
-        margin-top: 0;
-        color: #172f45;
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
     }
 
-    p {
-        text-align: justify;
+    aside {
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #bfe7f4;
+        box-shadow: 3px 3px 8px #fbf9f9;
+        border-radius: 8%;
     }
 
-    #box1 {
-        background-color: #b6e6f5;
-        margin-bottom: 2.5%;
-        padding: 1% 2%;
-        border-top: 2px solid #172f45;
-        border-bottom: 2px solid #172f45;
+    aside h3 {
+        text-shadow: 5px 5px 5px #dfd8d8;
+    }
+
+    .grid-item0 {
+        grid-column: 1 / span 3;
+    }
+
+    .grid-item1 {
+        grid-column: 1 / span 3;
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #f0f4f6;
+        border-radius: 5%;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    .frame {
+        opacity: 0.9;
+
+    }
+
+    .frame h3 {
+        font-weight: bolder;
+    }
+
+    .frame:hover {
+        background-color: #40869d;
+        color: #fbf9f9;
+        opacity: 1;
+        box-shadow: 8px 8px 10px #40869d;
         border-radius: 8px;
-    }
-
-    #box2 {
-        float: left;
-        width: 45%;
-        background-color: #b6e6f5;
-        margin-bottom: 2.5%;
-        padding: 1% 2%;
-        border-top: 2px solid #172f45;
-        border-bottom: 2px solid #172f45;
-        border-radius: 8px;
-    }
-
-    #box3 {
-        float: right;
-        width: 45%;
-        background-color: #b6e6f5;
-        margin-bottom: 2.5%;
-        padding: 1% 2%;
-        border-top: 2px solid #172f45;
-        border-bottom: 2px solid #172f45;
-        border-radius: 8px;
-    }
-
-    #box3 ol li {
-        margin-bottom: 1.85%;
-    }
-
-    #box4 {
-        clear: both;
-        background-color: #b6e6f5;
-        margin-bottom: 2.5%;
-        padding: 1% 2%;
-        border-top: 2px solid #172f45;
-        border-bottom: 2px solid #172f45;
-        border-radius: 8px;
-    }
-
-    #box1 h3,
-    #box2 h3,
-    #box3 h3,
-    #box4 h3 {
-        text-align: center;
     }
 
     /* Styling footer part */
