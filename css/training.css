@@ -85,62 +85,60 @@ main {
     border-radius: 8px;
 }
 
-main h2 {
+main h1 {
     color: #193a6a;
     text-align: center;
 }
 
-main h3 {
-    color: #193a6a;
-}
-
-main h3,
 main p {
     text-align: center;
 }
 
-aside {
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 2%;
-    background-color: #bfe7f4;
-    box-shadow: 5px 5px 8px #fbf9f9;
-    border-radius: 5%;
-}
-
-.grid-item1 {
-    font-size: 1.25em;
-    font-weight: bold;
-    background-color: #f0f4f6;
-    border-radius: 5%;
-    margin: 20px;
-}
-
-figure {
-    position: relative;
-    max-width: 275px;
-    margin: 2% auto;
-    border: 3px solid #52cfee;
+.trainingschedule {
+    border: 1px solid #1e3d58;
+    padding: 20px;
     border-radius: 8px;
+    overflow-x: auto;
 }
 
-figure img {
-    border-radius: 8px;
-}
-
-figcaption {
-    position: absolute;
-    bottom: 0;
-    background: rgba(78, 77, 155, 0.5);
-    color: #fff;
+table {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
     width: 100%;
-    padding: 5% 0;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+caption {
     font-size: 1.5em;
     font-weight: bold;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    padding: 1%;
+}
+
+th,
+td {
+    border: 1px solid #051d40;
+    padding: 8px;
+}
+
+th {
+    background-color: #193a6a;
+    color: aliceblue;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+    background-color: #5da9bb;
+}
+
+tr:nth-child(even) {
+    background-color: #c5effa;
+}
+
+tr:hover {
+    background-color: #3a5f9f;
+    color: #ffffff;
 }
 
 /* Styling footer part */
@@ -199,43 +197,6 @@ footer div a {
 
     nav li a {
         padding: 0.1em 0.75em;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-    }
-
-    aside {
-        font-size: 1.25em;
-        font-weight: bold;
-        padding: 2%;
-        background-color: #bfe7f4;
-        box-shadow: 5px 5px 8px #fbf9f9;
-        border-radius: 8%;
-    }
-
-    aside h2 {
-        text-shadow: 5px 5px 5px #dfd8d8;
-    }
-
-    .grid-item0 {
-        grid-column: 1 / span 2;
-    }
-
-    .grid-item1 {
-        grid-column: 1 / span 2;
-        font-size: 1.25em;
-        font-weight: bold;
-        padding: 2%;
-        background-color: #f0f4f6;
-        border-radius: 5%;
-        margin: 20px;
-    }
-
-    figcaption {
-        font-size: 1em;
     }
 }
 
@@ -319,7 +280,7 @@ footer div a {
         border-radius: 8px;
     }
 
-    main h2 {
+    main h1 {
         color: #193a6a;
         text-align: center;
     }
@@ -327,59 +288,6 @@ footer div a {
     main h3,
     main p {
         text-align: center;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 20px;
-    }
-
-    aside {
-        font-size: 1.25em;
-        font-weight: bold;
-        padding: 2%;
-        background-color: #bfe7f4;
-        box-shadow: 3px 3px 8px #fbf9f9;
-        border-radius: 8%;
-    }
-
-    aside h2 {
-        text-shadow: 5px 5px 5px #dfd8d8;
-    }
-
-    .grid-item0 {
-        grid-column: 1 / span 3;
-    }
-
-    .grid-item1 {
-        grid-column: 1 / span 3;
-        font-size: 1.25em;
-        font-weight: bold;
-        padding: 2%;
-        background-color: #f0f4f6;
-        border-radius: 5%;
-    }
-
-    figcaption {
-        font-size: 1em;
-    }
-
-    .frame {
-        opacity: 0.9;
-
-    }
-
-    .frame h3 {
-        font-weight: bolder;
-    }
-
-    .frame:hover {
-        background-color: #40869d;
-        color: #fbf9f9;
-        opacity: 1;
-        box-shadow: 8px 8px 10px #40869d;
-        border-radius: 8px;
     }
 
     /* Styling footer part */
