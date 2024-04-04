@@ -17,10 +17,6 @@ ul {
     border: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #ffffff;
 }
@@ -268,8 +264,15 @@ footer div a {
 }
 
 /* Media query  for tablet(some) and desktop viewport */
+@media screen and (min-width:769px) {
+    .about {
+        display: block;
+    }
 
-@media screen and (min-width:770px) {
+    .about-mobile {
+        display: none;
+    }
+
     .desktop {
         display: block;
     }
@@ -334,7 +337,6 @@ footer div a {
         background-color: #90d1e7;
         border-radius: 8px;
     }
-
 
     main h2 {
         color: #020d1d;

@@ -80,6 +80,7 @@ main {
 
 main h2 {
     color: #020d1d;
+    text-align: center;
 }
 
 #welcome {
@@ -157,6 +158,31 @@ p {
     text-align: center;
 }
 
+/* Media styling */
+.audio,
+.video {
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid #172f45;
+    border-radius: 9px;
+    color: aliceblue;
+    background-color: #102a50da;
+}
+
+audio {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 35px;
+    border: 3px solid #4e7ca6;
+}
+
+video {
+    width: 400px;
+    margin: 6px 4px;
+    border-radius: 10px;
+    border: 3px solid #4e7ca6;
+}
+
 /* Styling footer part */
 footer {
     margin: 10px 0;
@@ -200,8 +226,7 @@ footer div a {
 }
 
 /* Media query  for tablet(some) and desktop viewport */
-
-@media screen and (min-width:770px) {
+@media screen and (min-width:769px) {
     .about {
         display: block;
     }
@@ -274,7 +299,6 @@ footer div a {
         background-color: #90d1e7;
         border-radius: 8px;
     }
-
 
     main h2 {
         color: #020d1d;
@@ -409,6 +433,20 @@ footer div a {
     /* Styling footer part */
     footer {
         margin: 10px 0;
+    }
+
+    audio {
+        width: 50%;
+        margin: 10px auto;
+        border-radius: 35px;
+        border: 3px solid #4e7ca6;
+    }
+
+    video {
+        width: 800px;
+        margin: 6px auto;
+        border-radius: 10px;
+        border: 3px solid #4e7ca6;
     }
 
     footer div {
