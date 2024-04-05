@@ -223,6 +223,13 @@ footer div a {
     nav li a {
         padding: 0.1em 0.75em;
     }
+
+    video {
+        width: 600px;
+        margin: 6px 4px;
+        border-radius: 10px;
+        border: 3px solid #4e7ca6;
+    }
 }
 
 /* Media query  for tablet(some) and desktop viewport */
