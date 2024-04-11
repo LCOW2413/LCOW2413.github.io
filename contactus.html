@@ -10,6 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HumidCare | Contact Us</title>
     <link rel="stylesheet" href="css/contactus.css" />
+    <link rel="shortcut icon" href="img/logodehumdifier.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logodehumdifier.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logodehumdifier.png">
+    <link rel="icon" sizes="192x192" href="img/logodehumdifier.png">
 </head>
 
 <body>
@@ -21,6 +25,21 @@
         <a href="index.html"><img src="img/logodehumdifier.png" alt="Humidcare Company logo" id="imglogo"
                 class="desktop" /></a>
     </header>
+    <!-- mobile nav in hamburger format-->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a></li>
+            <a href="aboutus.html">About Us</a>
+            <a href="ourteam.html">Our Team</a>
+            <a href="specials.html">Specials</a>
+            <a href="training.html">Training</a>
+            <a href="media.html">Media</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
 
     <div class="navarea">
         <!-- website nav bar -->
@@ -32,7 +51,6 @@
                 <li><a href="specials.html">Specials</a></li>
                 <li><a href="training.html">Training</a></li>
                 <li><a href="media.html">Media</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -88,7 +106,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Referral Source</legend>
+                    <legend>More Details</legend>
                     <label for="reference">How did you find us?</label>
                     <select name="reference" id="reference">
                         <option value="ad">Advertisement</option>
@@ -102,6 +120,10 @@
 
                     <textarea id="questions" name="questions" placeholder="Anything else you want to know........?"
                         rows="5" cols="35"></textarea>
+
+                    <label for="start">Earliest date to contact:</label>
+
+                    <input type="date" id="date" name="date" />
                 </fieldset>
 
                 <input type="submit" id="submit" value="Submit" class="btn">
@@ -116,6 +138,8 @@
         <div><a href="mailto:email@humidcare.com">email@humidcare.com</a></div>
         <div><a href="tel:+13432689678">+1 343-268-9678</a></div>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

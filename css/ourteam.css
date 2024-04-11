@@ -35,44 +35,38 @@ img {
     padding: 0.5px 0;
 }
 
-/* Style rules for navigation area */
-.desktop {
-    display: none;
-}
-
-nav {
-    padding: 1%;
-    margin-bottom: 1%;
-}
-
-nav ul {
-    list-style-type: none;
+/* styling rules for hamburger menu */
+.mobile-nav a {
+    color: #061731da;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-}
-
-nav li {
-    font-size: 1.75em;
-    font-family: 'Protest Strike', sans-serif;
-    border-top: 1px solid #1e3d58;
-}
-
-nav li a {
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
     display: block;
-    padding: 0.5em 1em;
-    text-decoration: solid;
-    color: rgb(9, 9, 9);
 }
 
-nav li:first-child {
-    border-top: none;
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links*/
+.mobile {
+    display: block;
+}
+
+/* Style rules for navigation area */
+.desktop,
+#menu-links,
+.navarea {
+    display: none;
 }
 
 .tablet-desktop {
     display: none;
-}
-
-.mobile {
-    display: block;
 }
 
 main {
@@ -168,7 +162,8 @@ footer div a {
         display: block;
     }
 
-    .mobile {
+    .mobile,
+    .mobile-nav {
         display: none;
     }
 
@@ -181,12 +176,26 @@ footer div a {
         text-align: center;
     }
 
+    .navarea {
+        display: block;
+    }
+
     nav {
+        padding: 1%;
+        margin-bottom: 1%;
         align-self: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
     }
 
     /* style rule for nav area*/
     nav li {
+        font-size: 1.75em;
+        font-family: 'Protest Strike', sans-serif;
+        border-top: 1px solid #1e3d58;
         border-top: none;
         display: inline-block;
         border-right: 1px solid #1e3d58;
@@ -198,7 +207,14 @@ footer div a {
     }
 
     nav li a {
+        display: block;
         padding: 0.1em 0.75em;
+        text-decoration: solid;
+        color: rgb(9, 9, 9);
+    }
+
+    nav li:first-child {
+        border-top: none;
     }
 
     .grid {
